@@ -55,7 +55,7 @@ public class ParentForgotPw extends AppCompatActivity implements View.OnTouchLis
                     LoginController.getInstance().animateButtonTouched(sendTempPW);
                 } else if (event.getAction() == MotionEvent.ACTION_UP) {
                     LoginController.getInstance().animateButtonReleased(sendTempPW);
-                    //TODO: verify the login and trigger contact_item load
+
                     //email.getText().toString();
                     Toast.makeText(getApplicationContext(), "Password has been send",
                             Toast.LENGTH_LONG).show();

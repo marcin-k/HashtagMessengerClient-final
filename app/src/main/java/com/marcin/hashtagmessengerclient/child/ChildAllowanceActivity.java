@@ -42,7 +42,6 @@ public class ChildAllowanceActivity extends AppCompatActivity {
 //        Log.v("allowance:",allowance);
         dailyLimitTV.setText(allowance+" min");
 
-        //TODO: calculate daily usage
         int timeLeft = Integer.parseInt(allowance);
         timeLeftTodayTV.setText((timeLeft-25)+" min");
 

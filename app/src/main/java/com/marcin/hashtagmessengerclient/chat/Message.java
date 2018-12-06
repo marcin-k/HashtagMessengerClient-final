@@ -23,7 +23,6 @@ public class Message {
     private String body;
     private boolean approvedForChild;
     private int flag;
-    //TODO: that is new
     private int mType;
 //--------------------------Constructors------------------------------------------------------------
     public Message( Long senderId, Long recipientId, String body,
@@ -34,7 +33,7 @@ public class Message {
         this.body = body;
         this.approvedForChild = approvedForChild;
         this.flag = flag;
-        //TODO: change 1l to ServerController.getInstance().getId()
+
         if (senderId == ServerController.getInstance().getId()){
             isMine = true;
         }
@@ -52,7 +51,6 @@ public class Message {
         this.body = body;
         this.approvedForChild = approvedForChild;
         this.flag = flag;
-        //TODO: change 1l to ServerController.getInstance().getId()
         if (senderId == ServerController.getInstance().getId()){
             isMine = true;
         }

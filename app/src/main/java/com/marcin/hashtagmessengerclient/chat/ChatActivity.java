@@ -88,7 +88,6 @@ public class ChatActivity extends AppCompatActivity implements View.OnTouchListe
         try{
             for(Message m : ServerController.getInstance().getMessages(ServerController.getInstance()
                     .getId())){
-                //TODO: Look up if this contact id is used as a sender or recipient
 
                 if ((m.getSenderId() == ServerController.getInstance().getId() ||
                         m.getRecipientId() == ServerController.getInstance().getId())

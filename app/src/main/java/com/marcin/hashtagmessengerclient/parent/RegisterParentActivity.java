@@ -110,7 +110,7 @@ public class RegisterParentActivity extends AppCompatActivity implements View.On
                                 emailET.getText().toString());
 
                         try {
-                            //TODO: change pass to hash
+
                             //to prevent false positive when one account was already created during app run
                             if (ServerController.getInstance().isLoginFree(usernameET.getText().toString())) {
                                 NewUserCreator.userId = "";
